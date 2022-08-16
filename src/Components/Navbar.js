@@ -40,16 +40,16 @@ export const Navbar = (props) => {
                 Home <span className="sr-only">(current)</span>
               </a> */}
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/about">
-                {props.about}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/pricing">
-                Pricing
-              </a>
-            </li>
+//             <li className="nav-item">
+//               <a className="nav-link" href="/about">
+//                 {props.about}
+//               </a>
+//             </li>
+//             <li className="nav-item">
+//               <a className="nav-link" href="/pricing">
+//                 Pricing
+//               </a>
+//             </li>
           </ul>
         </div>
 
