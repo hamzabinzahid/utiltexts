@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export const Navbar = (props) => {
   return (
@@ -16,9 +16,9 @@ export const Navbar = (props) => {
           color: "green",
         }}
       > */}
-        <Link className="navbar-brand" to="/">
+        <a className="navbar-brand" href="#">
           {props.title}
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -33,22 +33,22 @@ export const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav" style={{ color: "red" }}>
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <a href="#" className="nav-link">
                 Home<span className="sr-only">(current)</span>
-              </Link>
+              </a>
               {/* <a className="nav-link" href="#">
                 Home <span className="sr-only">(current)</span>
               </a> */}
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <a className="nav-link" href="/about">
                 {props.about}
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/pricing">
+              <a className="nav-link" href="/pricing">
                 Pricing
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
